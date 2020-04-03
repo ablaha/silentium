@@ -1,0 +1,2 @@
+Please upload audio files as .mp3 and video files as .mp4, as only these formats can be processed by any web browser
+without the need for a media player. Thanks!
