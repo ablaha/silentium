@@ -1,0 +1,4 @@
+Please upload files in .png or .svg formats.
+
+With the exception of thumbnails, images should be at least 600 px wide. 
+There is a separate thumbnails folder.
