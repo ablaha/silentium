@@ -149,3 +149,11 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+
+/**
+  * Color styles
+*/
+
+.white {
+    color: white;
+}
