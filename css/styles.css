@@ -24,8 +24,8 @@ img {
   * Containers
 */
 .hero-img {
-  background-image: url("../assets/images/Refugees_welcome_okt_2015-2022.jpg");
-  height: 50%;
+  background-image: url("../assets/images/logo_wide.webp");
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,11 +53,22 @@ img {
   flex-direction: row;
 }
 
+.txt-container--left > iframe{
+  margin left: 10px;
+}
+
+.slides {
+    margin: 20px;
+    padding: 40px;
+    text-align: left;
+}
+
 .grid-s {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-  padding: 10px;
+  padding: 30px;
+  margin-left: 20px;
   margin-top: auto;
 }
 
@@ -71,12 +82,62 @@ img {
   grid-column-start: 1;
   grid-column-end: 3;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .h-r {
   grid-column-start: 3;
   grid-column-end: 5;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+/* carousel styles*/
+.main-carousel {
+  margin: 20px;
+}
+
+.carousel-cell {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.carousel-cell > img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0;
+  object-fit: contain;
+}
+.pulse {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transition: -webkit-transform 0.25s ease 0s;
+  transition: -webkit-transform 0.25s ease 0s;
+  transition: transform 0.25s ease 0s;
+  transition: transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s;
+}
+.pulse:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.carousel-cell-m {
+  width: 500px;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+@media screen and ( max-width: 500px ) {
+  .carousel-cell { width: 100%; }
 }
 
 /**
@@ -156,4 +217,8 @@ a:active {
 
 .white {
     color: white;
+}
+
+.bg-light {
+    background-color: #D7D9D6;
 }
